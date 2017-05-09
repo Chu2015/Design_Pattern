@@ -1,4 +1,4 @@
-package observer;
+package behavior.observer;
 
 public class test {
 	public static int a;
@@ -11,6 +11,6 @@ public class test {
 		Mysubject subject = new Mysubject();
 		subject.add(new User1());
 		subject.add(new User2());
-		subject.distributemsg("см╪шиоугакнЕц╚г╝");
+		subject.distributemsg("О©╫м╪О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ц╚г╝");
 	}
 }

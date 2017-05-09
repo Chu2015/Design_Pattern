@@ -1,4 +1,4 @@
-package observer;
+package behavior.observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,24 +7,24 @@ public class Mysubject implements Subject{
 	
 	private String msg;
 	
-	//Î¬»¤ÁËÒ»¸öÓÃ»§ÁĞ±í
+	//Î¬ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ğ±ï¿½
 	List<Observer> observers = new ArrayList<Observer>(); 
 	
-	//Ìí¼ÓÓÃ»§
+	//ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 	public void add(Observer observer) {
 		observers.add(observer);
 	}
-	//É¾³ıÓÃ»§
+	//É¾ï¿½ï¿½ï¿½Ã»ï¿½
 	public void delete(Observer observer) {
 		observers.remove(observer);
 	}
-	//Í¨ÖªËùÓĞÓÃ»§
+	//Í¨Öªï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 	public void notifyObservers() {
 		for(Observer o : observers){
 			o.update(msg);
 		}
 	}
-	//¿ªÊ¼¸üĞÂ²¢ÍÆËÍÏûÏ¢
+	//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	public void distributemsg(String s){
 		this.msg = s;
 		notifyObservers();

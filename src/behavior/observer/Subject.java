@@ -1,10 +1,10 @@
-package observer;
+package behavior.observer;
 
 public interface Subject {
-	//Ìí¼ÓÓÃ»§
+	//ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 	void add(Observer observer);
-	//É¾³ıÓÃ»§
+	//É¾ï¿½ï¿½ï¿½Ã»ï¿½
 	void delete(Observer observer);
-	//Í¨ÖªËùÓĞÓÃ»§
+	//Í¨Öªï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 	void notifyObservers();
 }
